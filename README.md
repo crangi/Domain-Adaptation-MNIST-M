@@ -31,7 +31,7 @@ We implemented a "tug-of-war" optimization using **Energy Distance** (mathematic
 
 * **Approach:** Forced the network to output latent representations that are statistically identical for both domains.
 * **Results:** Performance on MNIST-M jumped from **~43% to ~63%**.
-* **Key Finding:** Larger batch sizes (up to 1024) significantly improved statistical distribution estimates, peaking at **79.36%** accuracy with tuned learning rates.
+* **Key Finding:** Statistical alignment is highly sensitive to batch size. Larger batch sizes (up to 1024) significantly improved statistical distribution estimates, peaking at **79.36%** accuracy with tuned learning rates.
 
 ### Task 3: Adversarial Domain Adaptation (DANN)
 
