@@ -10,8 +10,6 @@ The project is implemented across three progressive stages:
 2. **Distance-based Alignment:** Using **Maximum Mean Discrepancy (MMD)** to align latent feature distributions.
 3. **Adversarial Training (DANN):** Implementing **Domain-Adversarial Neural Networks** with a Gradient Reversal Layer (GRL) for superior feature alignment.
 
----
-
 ## The Problem: Covariate Shift
 
 Neural networks typically assume that training and deployment data follow the same distribution. In this project, we utilize:
@@ -20,8 +18,6 @@ Neural networks typically assume that training and deployment data follow the sa
 * **Target Domain :** MNIST-M (digits blended with random color patches from the BSDS500 dataset).
 
 While the label space  remains the same, the visual shift causes a standard CNN to struggle with learning dataset-invariant features.
-
----
 
 ## Methodology & Results
 
@@ -47,7 +43,7 @@ Inspired by GANs, we implemented a **Domain-Adversarial Neural Network (DANN)**.
 
 ### Results summary
 
-![](Final_results.png)
+![](./Results/Final_results.png)
 
 --
 ## Requirements
@@ -60,7 +56,7 @@ To run these notebooks, you will need the following libraries:
 * `matplotlib`
 * `tqdm`
 
-## 💡 Key Technical Concepts
+## Key Technical Concepts
 
 * **Gradient Reversal Layer (GRL):** Acts as an identity function during the forward pass but multiplies gradients by  during backpropagation to facilitate adversarial training.
 * **Unsupervised Adaptation:** No target labels were ever used during the training process; the model adapts purely through feature alignment.
