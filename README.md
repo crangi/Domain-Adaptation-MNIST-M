@@ -1,4 +1,4 @@
-Beyond Black and White: Adapting Models to Visual Domain Shift
+# Beyond Black and White: Adapting Models to Visual Domain Shift
 
 ## Project Overview
 
